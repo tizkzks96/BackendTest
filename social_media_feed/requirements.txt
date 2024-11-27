@@ -1,6 +1,8 @@
-# Python Á¾¼Ó¼º ÆÄÀÏ
+# Python ï¿½ï¿½ï¿½Ó¼ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 fastapi
 uvicorn
 sqlalchemy
 pydantic
+jinja2
+python-multipart
