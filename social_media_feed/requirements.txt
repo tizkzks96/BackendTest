@@ -1,0 +1,6 @@
+# Python 종속성 파일
+
+fastapi
+uvicorn
+sqlalchemy
+pydantic
