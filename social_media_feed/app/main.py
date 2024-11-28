@@ -34,3 +34,12 @@ def success_page(request: Request):
     로그인 성공 시 표시되는 페이지
     """
     return templates.TemplateResponse("success.html", {"request": request})
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello, GCP without Docker!"}
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 8080))
+    uvicorn.run(app, host="0.0.0.0", port=port)

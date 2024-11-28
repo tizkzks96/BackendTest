@@ -1,6 +1,7 @@
 # Python ���Ӽ� ����
 
 fastapi
+gunicorn
 uvicorn
 sqlalchemy
 pydantic
