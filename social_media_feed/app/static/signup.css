@@ -9,19 +9,22 @@ body {
     justify-content: center;
     align-items: center;
     color: #333;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out; /* 동시에 페이드인 */
 }
 
-/* 로그인 컨테이너 */
-.login-container {
+/* 회원가입 컨테이너 */
+.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    animation: fadeIn 0.5s ease-in-out; /* 동시에 페이드인 */
 }
 
-/* 로그인 카드 */
-.login-card {
+/* 회원가입 카드 */
+.signup-card {
     background: #ffffff;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
@@ -29,26 +32,42 @@ body {
     width: 100%;
     max-width: 400px;
     text-align: center;
+    transform: translateY(0);
+    animation: fadeIn 0.5s ease-in-out; /* 동시에 페이드인 */
 }
 
 /* 제목 스타일 */
-.login-card h1 {
+.signup-card h1 {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
     color: #333;
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out; /* 동시에 페이드인 */
 }
 
-.login-card p {
+.signup-card p {
     margin: 10px 0 20px;
     font-size: 14px;
     color: #666;
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out; /* 동시에 페이드인 */
+}
+
+/* 오류 메시지 */
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out; /* 동시에 페이드인 */
 }
 
 /* 폼 그룹 */
 .form-group {
     margin-bottom: 20px;
     text-align: left;
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out; /* 동시에 페이드인 */
 }
 
 label {
@@ -56,9 +75,10 @@ label {
     color: #555;
     margin-bottom: 5px;
     display: block;
+    animation: fadeIn 0.5s ease-in-out; /* 동시에 페이드인 */
 }
 
-/* 수정된 입력 필드 */
+/* 입력 필드 */
 input {
     width: 100%;
     padding: 14px 16px; /* 내부 여백을 확대하여 가독성 향상 */
@@ -67,8 +87,9 @@ input {
     font-size: 16px; /* 폰트 크기 증가 */
     background-color: #f9f9f9;
     color: #333;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
     box-sizing: border-box; /* 박스 모델 일관성 유지 */
+    animation: fadeIn 0.5s ease-in-out; /* 동시에 페이드인 */
 }
 
 input:focus {
@@ -77,8 +98,8 @@ input:focus {
     outline: none;
 }
 
-/* 로그인 버튼 */
-.login-button {
+/* 회원가입 버튼 */
+.signup-button {
     background: #007bff;
     border: none;
     padding: 14px;
@@ -88,29 +109,41 @@ input:focus {
     font-weight: bold;
     cursor: pointer;
     width: 100%;
-    transition: background 0.3s, transform 0.2s;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.5s ease-in-out; /* 동시에 페이드인 */
 }
 
-.login-button:hover {
+.signup-button:hover {
     background: #0056b3;
-    transform: scale(1.02);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 91, 179, 0.3);
 }
 
-/* 회원가입 링크 */
-.signup-link {
+/* 로그인 링크 */
+.login-link {
     margin-top: 15px;
     font-size: 14px;
     color: #666;
+    animation: fadeIn 0.5s ease-in-out; /* 동시에 페이드인 */
 }
 
-.signup-link a {
+.login-link a {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-.signup-link a:hover {
+.login-link a:hover {
     color: #0056b3;
 }
 
+/* 애니메이션 키프레임 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
