@@ -2,28 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="/static/signup.css">
+    <script>
+        function validatePasswords(event) {
+            const password1 = document.getElementById('password1');
+            const label1 = document.getElementById('label-password1');
+            const password2 = document.getElementById('password2');
+            const errorMessage = document.getElementById('error-message');
+
+            // 비밀번호 비교
+            if (password1.value !== password2.value) {
+                event.preventDefault(); // 폼 제출 방지
+                errorMessage.textContent = "Passwords do not match. Please try again.";
+                errorMessage.style.display = "block";
+
+                // 비밀번호 입력 필드 스타일 변경
+                password1.style.borderColor = "red";
+                label1.style.color = "red";
+                return false;
+            }
+
+            // 오류가 없으면 스타일 초기화
+            errorMessage.style.display = "none";
+            password1.style.borderColor = "";
+            password1.style.color = "";
+            password2.style.borderColor = "";
+            password2.style.color = "";
+            return true;
+        }
+    </script>
 </head>
 <body>
     <div class="signup-container">
         <div class="signup-card">
             <h1>Create an Account</h1>
-            {% if error %}
-            <p class="error-message">{{ error }}</p>
-            {% endif %}
-            <form action="/signup" method="post">
+            <p id="error-message" class="error-message" style="display: none; color: red; font-size: 14px;"></p>
+            <form action="/signup" method="post" onsubmit="return validatePasswords(event)">
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <label for="password1" id="label-password1">Password</label>
+                    <input type="password" id="password1" name="password1" placeholder="Enter your password" required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" name="password2" placeholder="Confirm your password" required>
                 </div>
                 <button type="submit" class="signup-button">Sign Up</button>
             </form>
