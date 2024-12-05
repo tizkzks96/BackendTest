@@ -55,3 +55,5 @@ def signup(request: Request, email: str = Form(...), password: str = Form(...)):
     users_db[email] = {"email": email, "hashed_password": hashed_password}
     # 회원가입 성공 시 로그인 페이지로 리디렉션
     return RedirectResponse(url="/login", status_code=302)
+
+
