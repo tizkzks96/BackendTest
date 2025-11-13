@@ -1,0 +1,21 @@
+{
+  "name": " ucf.media.service",
+  "version": "0.2.17",
+  "displayName": " UCF.Media.Service",
+  "unity": "2020.3",
+  "unityRelease": "25f1",
+  "keywords": [
+    "il"
+  ],
+  "author": {
+    "name": "SDS",
+    "email": "entkstls131@naver.com",
+    "url": "https:// io/"
+  },
+  "dependencies": {
+    " ucf.media.module": "0.2.7",
+    " ucf.core.bridge": "0.1.22",
+    " ucf.core.helper": "0.1.70",
+    " ucf.telepresence": "0.1.49"
+  }
+}

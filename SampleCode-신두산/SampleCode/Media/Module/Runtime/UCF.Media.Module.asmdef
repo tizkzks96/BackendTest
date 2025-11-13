@@ -1,0 +1,20 @@
+{
+    "name": "UCF.Media.Module",
+    "rootNamespace": " UCF.Media.Module",
+    "references": [
+        "GUID:3286a49761f075546948f5ee6bec83dc",
+        "GUID:3ca842002c51d0a43b73e45298809a13",
+        "GUID:f356bfbdbb5c5a847a454e74836c5873",
+        "GUID:e16b1fd7316433f4981bca474d613373",
+        "GUID:cce3876a6ddcabc4598310155124c30e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

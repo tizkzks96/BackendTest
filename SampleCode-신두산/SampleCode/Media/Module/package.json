@@ -1,0 +1,20 @@
+{
+  "name": " ucf.media.module",
+  "version": "0.2.9",
+  "displayName": " UCF.Media.Module",
+  "unity": "2020.3",
+  "unityRelease": "25f1",
+  "keywords": [
+    "il"
+  ],
+  "author": {
+    "name": "SDS",
+    "email": "entkstls131@naver.com",
+    "url": "https:// io/"
+  },
+  "dependencies": {
+    " ucf.mrliscore": "0.1.4",
+    " ucf.avprovideo": "2.6.5",
+    " ucf.pdfrenderer": "5.51.0"
+  }
+}

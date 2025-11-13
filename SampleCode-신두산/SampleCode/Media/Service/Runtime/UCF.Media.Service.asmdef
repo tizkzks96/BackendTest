@@ -1,0 +1,21 @@
+{
+    "name": "UCF.Media.Service",
+    "rootNamespace": " UCF.Media.Service",
+    "references": [
+        "GUID:9c02792796121154cb0fe4591ae77824",
+        "GUID:e16b1fd7316433f4981bca474d613373",
+        "GUID:cce3876a6ddcabc4598310155124c30e",
+        "GUID:b37f75632a9304e4499e6665bdc33fcc",
+        "GUID:01331de8416f38d4d878f252b8f1fc35",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

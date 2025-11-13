@@ -1,0 +1,19 @@
+{
+    "name": "UCF.Media.Module.Editor",
+    "rootNamespace": " UCF.Media.Module.Editor",
+    "references": [
+        "GUID:9c02792796121154cb0fe4591ae77824",
+        "GUID:b7e953b0f2cefdb479f1f95f12b72863"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
